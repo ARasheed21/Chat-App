@@ -41,7 +41,7 @@ class ChatCubit extends Cubit<ChatState> {
           }
         }
 
-        chatList.sort((a, b) => b.lastMessageTime.compareTo(a.lastMessageTime));
+        chatList.sort((a, b) => b.lastMessageTimeStamp.compareTo(a.lastMessageTimeStamp));
         emit(ChatSuccess(chatList));
         print('Chats Loaded Success');
       } catch (e) {
@@ -67,7 +67,7 @@ class ChatCubit extends Cubit<ChatState> {
         chatList.add(updatedChat);
       }
 
-      chatList.sort((a, b) => b.lastMessageTime.compareTo(a.lastMessageTime));
+      chatList.sort((a, b) => b.lastMessageTimeStamp.compareTo(a.lastMessageTimeStamp));
       print('chat updated');
       emit(ChatSuccess(chatList));
     } catch (e) {

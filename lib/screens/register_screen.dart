@@ -131,6 +131,7 @@ class RegisterScreen extends StatelessWidget {
                             BlocListener<AuthCubit, AuthState>(
                               listener: (context, state) {
                                 if (state is AuthSuccess) {
+                                  ScaffoldMessenger.of(context).hideCurrentSnackBar();
                                   showSnackBar(context, 'Registered Successfully');
                                   Navigator.push(
                                     context,

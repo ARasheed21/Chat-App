@@ -3,15 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_chat_app/cubits/add_message_cubit/add_message_cubit.dart';
 import 'package:my_chat_app/cubits/auth_cubit/auth_cubit.dart';
-import 'package:my_chat_app/cubits/chat_cubit/chat_cubit.dart';
 import 'package:my_chat_app/provider/image_picker_provider.dart';
 import 'package:my_chat_app/provider/password_visibility_provider.dart';
 import 'package:my_chat_app/screens/splash_screen.dart';
 import 'package:provider/provider.dart';
-
 import 'cubits/user_cubit/user_cubit.dart';
-import 'provider/remember_me_provider.dart';
-import 'screens/login_screen.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
