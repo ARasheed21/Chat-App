@@ -19,7 +19,11 @@ class FavouriteContainer extends StatelessWidget {
               ),
             ],
             image: DecorationImage(
-              image: AssetImage('assets/images/rasheed.jpeg'),
+              image: ResizeImage(
+                AssetImage('assets/images/rasheed.jpeg'),
+                width: 210,
+                height: 400,
+              ),
               fit: BoxFit.cover,
             ),
           ),
