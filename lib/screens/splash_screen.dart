@@ -50,7 +50,18 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/images/chat1.jpg'),
+          SizedBox(
+            width: 220,
+            height: 220,
+            child: Image(
+              image: ResizeImage(
+                AssetImage('assets/images/chat1.jpg'),
+                width: 440,
+                height: 440,
+              ),
+              fit: BoxFit.cover,
+            ),
+          ),
           SizedBox(
             width: 200,
             child: LinearProgressIndicator(
